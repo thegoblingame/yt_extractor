@@ -1,0 +1,1 @@
+Ignore all files contained in the MISC folder.
