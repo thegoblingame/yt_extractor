@@ -1,5 +1,5 @@
 Ignore all files contained in the MISC folder.
 
-## Commands
+## Skills
 
 Scripts located in the `.claude/skills` folder:
