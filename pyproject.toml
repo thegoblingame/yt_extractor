@@ -1,0 +1,10 @@
+[project]
+name = "yt-extractor"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "natsort>=8.4.0",
+    "pytest>=9.0.2",
+]

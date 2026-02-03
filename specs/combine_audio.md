@@ -1,5 +1,8 @@
 # Script #3: Combine Audio (combine_audio.py)
 
+## Implementation Status
+Not Implemented
+
 ## Purpose
 Combines multiple audio files from a folder into a single audio file using FFmpeg.
 

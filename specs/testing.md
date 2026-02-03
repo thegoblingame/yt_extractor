@@ -1,5 +1,32 @@
 # Testing Specification
 
+## Implementation Status
+Test stubs and fixtures have been created. The test files import functions from the scripts that are not yet implemented, so tests cannot run until the scripts are built.
+
+### Created Files
+
+| File | Description |
+|------|-------------|
+| `conftest.py` | Shared fixtures for all tests | ✅
+| `test_download_audio.py` | 17 tests across 5 test classes | ✅
+| `test_extract_clips.py` | 18 tests across 6 test classes | ✅
+| `test_combine_audio.py` | 17 tests across 4 test classes | ✅
+
+### Fixtures (conftest.py)
+- **Path fixtures**: `project_root`, `scripts_dir`
+- **Temp directory**: `tmp_script_dir` - mimics script folder structure
+- **Audio generation**: `test_audio_file` (30s), `test_audio_file_short` (5s), `test_audio_files` (5 numbered files)
+- **YT-DLP mocks**: `mock_ytdlp_success`, `mock_ytdlp_failure`, `mock_ytdlp_mixed`
+- **Helpers**: `create_csv`, `get_audio_duration`
+
+### Test Coverage
+
+**download_audio**: CSV parsing, download function with mocks, batch processing, logging, summary output
+
+**extract_clips**: CSV parsing, timestamp validation, input file finding, clip extraction with real FFmpeg, multiple clips, logging
+
+**combine_audio**: Natural sorting, file listing, audio combination with real FFmpeg, original files unchanged, logging
+
 ## Overview
 A test suite to verify the three scripts function correctly after changes. Tests run using pytest.
 

@@ -1,5 +1,8 @@
 # Script #2: Extract Clips (extract_clips.py)
 
+## Implementation Status
+Not Implemented
+
 ## Purpose
 Extracts audio clips from a source audio file using FFmpeg. Takes timestamp pairs from a CSV file and creates individual clip files. Designed for extracting songs from DJ mixes or long audio recordings.
 
