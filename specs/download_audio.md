@@ -1,5 +1,8 @@
 # Script #1: Download Audio (download_audio.py)
 
+## Implementation Status
+Not Implemented
+
 ## Purpose
 Downloads audio from YouTube URLs using YT-DLP. Processes multiple URLs from a CSV file and saves audio files to an output folder.
 
